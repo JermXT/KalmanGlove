@@ -1,0 +1,17 @@
+<leftHand>
+	<wrist>12,12,12</wrist>
+	<thumb>12,12,12</thumb>
+	<index>12,12,12</index>
+	<middle>12,12,12</middle>
+	<ring>12,12,12</ring>
+	<pinky>12,12,12</pinky>
+</leftHand>
+<rightHand>
+	<wrist>12,12,12</wrist>
+	<thumb>12,12,12</thumb>
+	<index>12,12,12</index>
+	<middle>12,12,12</middle>
+	<ring>12,12,12</ring>
+	<pinky>12,12,12</pinky>
+</rightHand>
+	

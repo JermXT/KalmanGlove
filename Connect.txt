@@ -1,0 +1,40 @@
+ Unity Sample
+ -----------------------------------------------------
+ using UnityEngine;
+ using System.Collections;
+ using System.IO.Ports;
+ 
+ public class Move : MonoBehaviour {
+     SerialPort sp = new SerialPort("COM3", 9600);
+ 
+     void Start () {
+         sp.Open ();
+         sp.ReadTimeout = 1;
+     }
+ 
+     void Update () 
+     {
+         try{
+             print (sp.ReadLine());
+         }
+         catch(System.Exception){
+         }
+     }
+ }
+ -----------------------------------------------------------------------
+ Arduino Sample
+ --------------------------------------------------------------------------
+  void setup() {
+   // put your setup code here, to run once:
+   Serial.begin(9600);
+ }
+ 
+ void loop() {
+   // put your main code here, to run repeatedly:
+   count = count +1;
+   if(count == 10000)
+     count = 0;
+   Serial.print("Test: ");
+   Serial.println(count);
+   delay(1000);
+ }
